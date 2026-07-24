@@ -144,7 +144,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid #e8a917; outline-
     </div>
     <div class="hint" id="curHint">Type the exact &pound; amount from your banking app &mdash; penny-perfect.</div>
     <div class="chips" id="chips"></div>
-    <input class="text-input" id="note" placeholder="Note (optional) &mdash; e.g. Lidl, lunch with Mum" aria-label="Optional note">
+    <input class="text-input" id="note" placeholder="Note (optional)" aria-label="Optional note">
     <div class="date-row">
       <label for="entryDate">Date</label>
       <input class="text-input" type="date" id="entryDate" min="2026-07-14" max="2026-08-23" aria-label="Date of spend">
@@ -194,6 +194,7 @@ var CATEGORIES = [
   { id: "transport", label: "Transport", icon: "\uD83D\uDE95" },
   { id: "gym", label: "Gym", icon: "\uD83C\uDFCB\uFE0F" },
   { id: "treats", label: "Treats", icon: "\uD83C\uDF66" },
+  { id: "cash", label: "Cash", icon: "\uD83D\uDCB5" },
   { id: "other", label: "Other", icon: "\uD83D\uDCB3" }
 ];
 function cat(id) { for (var i=0;i<CATEGORIES.length;i++) if (CATEGORIES[i].id===id) return CATEGORIES[i]; return CATEGORIES[6]; }
